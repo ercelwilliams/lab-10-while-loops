@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function countDown(start) {
+		console.log(start);
+
+		let nextNumber = start - 1;
+
+		if (nextNumber > 0) {
+			countDown(nextNumber);	
+	} else {
+		console.log("HAPPY NEW YEAR!");
+	}
+
+	}
+
+	countDown(10);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function countDown(start) {
+		console.log(start);
+
+		let nextNumber = start - 1;
+
+		if (nextNumber > 0) {
+			//countDown(nextNumber);	
+			setTimeout(countDown, 1000, nextNumber);
+	} else {
+		//console.log("HAPPY NEW YEAR!");
+		setTimeout(function(){console.log("HAPPY NEW YEAR!");})
+	}
+
+	}
+
+	var count = parseInt(prompt("How many seconds are left before the ball drop? "));
+
+	countDown(count);
+</script>
+</body>
+</html>
